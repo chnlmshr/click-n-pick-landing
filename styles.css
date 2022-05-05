@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #0c1a11;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#circle{
+  height: 300px;
+  width: 300px;
+  background-color: #15D989;
+  border-radius: 300px;
+  position: absolute;
+  top: -86px;
+  left: -97px;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(250px);
+  -webkit-backdrop-filter: blur(250px);
+  z-index: 9;
+}
+
+.navbar {
+  padding:25px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#heading{
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.options{
+  display: flex;
+  padding-right:40px;
+}
+
+.options div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.star {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 70px;
+  height: 140px;
+  border-radius: 200%;
+  background-color: #0c1a11;
+  /* background: radial-gradient(circle at top left,#0c1a1100, #000); */
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(36.5972px);
+  z-index: -1;
+  border-radius: 200px;
+}
+
+#container {
+  display: flex;
+}
+
+#left, #right {
+  width: 50vw;
+  height: 100vh;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+}
