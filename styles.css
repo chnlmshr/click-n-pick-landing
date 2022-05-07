@@ -1,13 +1,13 @@
 body {
   margin: 0;
   background-color: #0c1a11;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
-#circle{
+#circle {
   height: 300px;
   width: 300px;
-  background-color: #15D989;
+  background-color: #15d989;
   border-radius: 300px;
   position: absolute;
   top: -86px;
@@ -23,20 +23,20 @@ body {
 }
 
 .navbar {
-  padding:25px;
+  padding: 25px;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#heading{
+#heading {
   font-size: 20px;
   padding-left: 40px;
 }
 
-.options{
+.options {
   display: flex;
-  padding-right:40px;
+  padding-right: 40px;
 }
 
 .options div {
@@ -75,7 +75,8 @@ body {
   display: flex;
 }
 
-#left, #right {
+#left,
+#right {
   width: 50vw;
   height: 100vh;
 }
@@ -83,4 +84,43 @@ body {
 #left {
   display: flex;
   flex-direction: column;
+}
+
+#circular-text-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-size: 15px;
+  position: absolute;
+  margin-top: -120px;
+}
+#circular-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+span {
+  position: absolute;
+  transform-origin: 0 80px;
+  margin: 2px;
+}
+
+body {
+  background-color: #333;
+  font-size: 8px;
+  word-spacing: 3px;
+  letter-spacing: 1.5px;
 }
