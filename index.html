@@ -10,10 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/f282c01b4b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Click And Pick</title>
   </head>
   <body>
+    <div id="sm-download">
+      <h1>Click & Pick</h1>
+      <p>For better visualisation visit site in a desktop or laptop.</p>
+      <a
+        href="https://drive.google.com/file/d/1pKNOZzaEByIfwxXmtx8FfoJ1OTWz3N_A/view"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Download</a
+      >
+    </div>
     <div id="circle"></div>
     <div id="main">
       <nav class="navbar">
@@ -22,27 +36,59 @@
           <div>HOME</div>
           <div>GALLERY</div>
           <div>INSTRUCTION</div>
-          <div>DOWNLOAD</div>
+          <div id="download">
+            <a
+              href="https://drive.google.com/file/d/1pKNOZzaEByIfwxXmtx8FfoJ1OTWz3N_A/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              >DOWNLOAD</a
+            >
+          </div>
         </div>
       </nav>
       <div id="container">
         <div id="left">
-          <div id="circular-text">
-            <h1 id="circular-text-h1">
-              EXPLORE CLICK & PICK • EXPLORE CLICK & PICK •
-            </h1>
+          <img id="startopleft" src="startopleft.svg" />
+          <div id="bigText">
+            <div class="white">BE</div>
+            <div class="green">VOCAL,</div>
+            <br />
+            <div class="white">FOR</div>
+            <div class="green">LOCAL.</div>
           </div>
+          <p id="description">
+            An app that connnects local vendors and customers worldwide where
+            each vendor can promote or advertise their unique products and
+            business. Our mission is to provide digital recoginition to the
+            local vendors.
+          </p>
+          <div id="circular-text-container">
+            <div id="circular-text">
+              <h1 id="circular-text-h1"></h1>
+              <div id="socialBubble"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div></div>
+          </div>
+          <img id="starbottomleft" src="starbottomleft.svg" />
         </div>
-        <div id="right"></div>
+        <div id="right">
+          <img id="startopright" src="startopright.svg" />
+          <div id="logo-n-name">
+            <div class="bg-white">
+              <h1 class="greenLogo">Click & Pick</h1>
+              <img src="Click&PickLogo.png" alt="click-n-pick-logo" />
+            </div>
+          </div>
+          <div id="socials">
+            <div id="socialBubble"><i class="fab fa-facebook-f"></i></div>
+            <div id="socialBubble"><i class="fab fa-twitter"></i></div>
+            <div id="socialBubble"><i class="fab fa-discord"></i></div>
+            <div id="socialBubble"><i class="fab fa-instagram"></i></div>
+          </div>
+          <img id="starbottomright" src="starbottomright.svg" />
+        </div>
       </div>
       <script src="./script.js"></script>
-      <!-- <div class="star">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="square"></div>
-      </div> -->
     </div>
   </body>
 </html>

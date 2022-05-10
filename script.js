@@ -1,8 +1,4 @@
 const CircularText = document.getElementById("circular-text-h1");
-// CircularText.innerHTML = CircularText.textContent.replace(
-//   /(.*)/,
-//   "<span>$&</span>"
-// );
 
 let elems = "EXPLORE CLICK & PICK • EXPLORE CLICK & PICK •"
   .split("")
@@ -10,18 +6,15 @@ let elems = "EXPLORE CLICK & PICK • EXPLORE CLICK & PICK •"
 
 let s = "";
 
-for (let elem of elems) {
-  s += elem;
-}
+for (let elem of elems) s += elem;
 
 CircularText.innerHTML = s;
 
 const ele = document.querySelectorAll("span");
 
 for (var i = 0; i < ele.length; i++) {
-  ele[i].style.transform = "rotate(" + i * 8 + "deg)";
+  ele[i].style.transform = "rotate(" + i * 7.9 + "deg)";
   ele[i].style.margin = "5px";
+  if ((i >= 8 && i <= 19) || (i >= 31 && i != ele.length - 1))
+    ele[i].style.color = "#50CB73";
 }
-// bhai ye angle dena pdega calculate krke
-// EXPLORE CLICK & PICK • EXPLORE CLICK & PICK •
-//ban gya bhai text ab gol gol ghumana hai ek point pe
