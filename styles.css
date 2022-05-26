@@ -1,24 +1,52 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   margin: 0;
   background-color: #0c1a11;
   font-family: "IBM Plex Mono", monospace;
   user-select: none;
 }
-#download{
-text-decoration: none;
+#download {
+  text-decoration: none;
 }
 #circle {
   height: 300px;
   width: 300px;
   background-color: #15d989;
   border-radius: 300px;
-  position: absolute;
+  position: fixed;
   top: -86px;
   left: -97px;
+  animation: animatedCircle 2s linear;
 }
 
-#main {
+#mainHome {
   height: 100vh;
+  backdrop-filter: blur(250px);
+  -webkit-backdrop-filter: blur(250px);
+  z-index: 9;
+  overflow: hidden;
+}
+#mainGallery {
+  backdrop-filter: blur(250px);
+  -webkit-backdrop-filter: blur(250px);
+  z-index: 9;
+}
+#mainInstruction {
   backdrop-filter: blur(250px);
   -webkit-backdrop-filter: blur(250px);
   z-index: 9;
@@ -66,13 +94,12 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
 }
-#circular-text-container{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-margin-top: 20px;
+#circular-text-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 #circular-text-h1 {
   display: flex;
@@ -89,10 +116,8 @@ margin-top: 20px;
   align-items: center;
   height: 160px;
   animation: animate 8s linear infinite;
-  width:160px;
+  width: 160px;
 }
-
-
 
 @keyframes animate {
   from {
@@ -103,45 +128,59 @@ margin-top: 20px;
   }
 }
 
+@keyframes animatedCircle {
+  from {
+    left: -200px;
+    top: -180px;
+  }
+  to {
+    left: -97px;
+    top: -86px;
+  }
+}
+
 #circular-text span {
   position: absolute;
   transform-origin: 0 80px;
   margin: 2px;
-  color:white;
+  color: white;
 }
-#bigText{
+#bigText {
   font-weight: bold;
-  font-size:64px;
-  color:white;
+  font-size: 64px;
+  color: white;
 }
-#description{
-  color:white;
+#description {
+  color: white;
   font-size: 16px;
 }
-.green, .white {
+.green,
+.white {
   padding: 0;
   margin: 0;
   display: inline;
 }
 
+.navbar .green a {
+  color: #15d989;
+}
 .green {
-  color:#15d989;
+  color: #15d989;
 }
 .greenLogo {
-  color:#50CB73;
+  color: #50cb73;
   font-size: 50px;
 }
-.bg-white{
+.bg-white {
   width: 580px;
   height: 580px;
-  background: linear-gradient(93.3deg, #FFFFFF 0%, #C1CCC7 100%);
+  background: linear-gradient(93.3deg, #ffffff 0%, #c1ccc7 100%);
   border-radius: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 
 #right {
   display: flex;
@@ -155,27 +194,29 @@ margin-top: 20px;
   height: 315px;
 }
 
-#socials 
-{
+#socials {
   margin: 30px;
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-#socialBubble{
+#socialBubble {
   height: 40px;
-  width:40px;
+  width: 40px;
   border-radius: 30px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #6E8678;
+  background: #6e8678;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-#startopleft, #starbottomleft, #startopright, #starbottomright {
+#startopleft,
+#starbottomleft,
+#startopright,
+#starbottomright {
   position: absolute;
 }
 
@@ -183,21 +224,20 @@ margin-top: 20px;
   top: 60px;
   left: 20px;
 }
-#startopright{
-  top:50px;
+#startopright {
+  top: 50px;
   right: 20px;
 }
-#starbottomleft{
+#starbottomleft {
   left: 20px;
   bottom: 20px;
 }
-#starbottomright{
- right: 20px;
-bottom: 20px;
+#starbottomright {
+  right: 20px;
+  bottom: 20px;
 }
 
 #circular-text #socialBubble {
-  
   animation: animate2 8s linear infinite;
 }
 #sm-download {
@@ -214,7 +254,8 @@ bottom: 20px;
 }
 
 @media screen and (max-width: 400px) {
-  #main, #circle {
+  #main,
+  #circle {
     display: none;
   }
   #sm-download {
@@ -223,17 +264,17 @@ bottom: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
     color: white;
   }
   #sm-download p {
     text-align: center;
   }
   #sm-download h1 {
-   color:white;
+    color: white;
     text-align: center;
   }
-  #sm-download a{
+  #sm-download a {
     margin-top: 20px;
     border: none;
     background-color: #15d989;
@@ -247,4 +288,17 @@ bottom: 20px;
     align-items: center;
     text-decoration: none;
   }
+}
+
+/* Instructions */
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.scroll-snap {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
 }
