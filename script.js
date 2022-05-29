@@ -1,5 +1,3 @@
-document.location = "click-n-pick://passwordreset/12345678";
-
 const CircularText = document.getElementById("circular-text-h1");
 
 let elems = "EXPLORE CLICK & PICK • EXPLORE CLICK & PICK •"
