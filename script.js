@@ -1,4 +1,4 @@
-document.location = "click-n-pick://market";
+document.location = "click-n-pick://passwordreset/12345678";
 
 const CircularText = document.getElementById("circular-text-h1");
 
