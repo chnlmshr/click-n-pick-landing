@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/f282c01b4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    </style>
+    <title>Instructions</title>
+  </head>
+  <body style="overflow: hidden">
+    <div id="circle"></div>
+    <div id="mainInstruction">
+      <nav class="navbar">
+        <div id="heading"><a href="index.html">Click & Pick</a></div>
+        <div class="options">
+          <div><a href="index.html">HOME</a></div>
+          <div>
+            <a href="gallery.html"> GALLERY</a>
+          </div>
+          <div class="green"><a href="instructions.html">INSTRUCTIONS</a></div>
+          <div id="download">
+            <a
+              href="https://drive.google.com/file/d/1pKNOZzaEByIfwxXmtx8FfoJ1OTWz3N_A/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              >DOWNLOAD</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="container scroll-snap">
+        <section class="row justify-content-evenly p-5">
+          <div class="col-3">
+            <img
+              class="img-fluid rounded p-2"
+              src="https://clickpick-poducts.s3.ap-south-1.amazonaws.com/loginandsignup.gif"
+            />
+          </div>
+          <div class="col-5 text-light flex align-item-centre">
+            <h3>Login & Signup</h3>
+            <p class="pt-4">
+              The starting of your cyber journey with Click & Pick begings here.
+              This module is divided into two sub-modules:
+              <br /><br />
+              <strong>※ Signup:</strong> <br />
+              Start creating your Click & Pick account by adding necessary
+              details like name, pincode, role (Customer or Vendor), email and a
+              password. <br /><br />
+              <strong>※ Login:</strong> <br />
+              With the details created now you can login in to Click & Pick.
+              This module is supported by JWT auth token Authentication. It
+              provides all the features like authentication with email &
+              password. It authenticates a user with unique id.
+              <!-- and allows to reset a forgotten password. -->
+            </p>
+          </div>
+        </section>
+        <section class="row justify-content-evenly p-4">
+          <div class="col-3">
+            <img
+              class="img-fluid rounded p-2"
+              src="https://clickpick-poducts.s3.ap-south-1.amazonaws.com/create.gif"
+            />
+          </div>
+          <div class="col-5 text-light">
+            <h3>Create & Post</h3>
+            <p class="pt-4">
+              Create a post with details such as images, price, availabilty and
+              description of your product. <br />
+              <br />
+              <strong>※Create:</strong> <br />
+              Select upto 8 images from your gallery and after that fill in the
+              general details like, product name description, pricing and
+              availabilty.
+              <br /><br />
+              <strong>※Post:</strong> <br />
+              The created post will be displayed on the home page and also in
+              your profile page, leaving its permanent print in the cyber world.
+            </p>
+          </div>
+        </section>
+        <section class="row justify-content-evenly p-4">
+          <div class="col-3">
+            <img
+              class="img-fluid rounded p-2"
+              src="https://clickpick-poducts.s3.ap-south-1.amazonaws.com/buychat.gif"
+            />
+          </div>
+          <div class="col-5 text-light">
+            <h3>Chat & Buy</h3>
+            <p class="pt-4">
+              This feature allows customers to chat directly with the vendors
+              regarding any product related concern. Chat & Buy is based upon
+              the market and chat user interface. <br />
+              <br />
+              <strong>※Chat:</strong> <br />
+              Chat directly with the vendor regarding product of your choice,
+              fix delivery, negotiate payment accordingly.<br /><br />
+              <strong>※Buy:</strong> <br />
+              Press the buy button on any product and it will redirect you
+              automatically to the chat of the product's vendor.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
